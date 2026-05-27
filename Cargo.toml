@@ -1,0 +1,17 @@
+[package]
+name = "image_sorter"
+version = "0.1.1"
+edition = "2021"
+description = "Sort images into YYYY/MM/DD folders using EXIF metadata"
+
+[[bin]]
+name = "image_sorter"
+path = "src/main.rs"
+
+[dependencies]
+anyhow   = "1"
+clap     = { version = "4", features = ["derive"] }
+kamadak-exif     = "0.5"          # kamadak-exif
+walkdir  = "2"
+chrono = "*"
+colored_text = "*"
